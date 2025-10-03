@@ -18,10 +18,10 @@ int populacao1, populacao2, NPT1, NPT2, comparador, opcao;
 float area1, area2, PIB1, PIB2, pibpc1, pibpc2, densipop1, densipop2;
 
 /*conversão de tipos para float
-float pibpc1 = (float) PIB1 / populacao1;
-float pibpc2 = (float) PIB2 / populacao2;
-float densipop1 = (float) populacao1 / area1;
-float densipop2 = (float) populacao2 / area2;
+ pibpc1 =  PIB1 / (float)populacao1;
+ pibpc2 =  PIB2 / (float)populacao2;
+ densipop1 = (float) populacao1 / area1;
+ densipop2 = (float) populacao2 / area2;
 estes cálculos foram movidos para depois da entrada dos dados*/
 
 //Entrada dos dados das cartas
@@ -63,8 +63,8 @@ printf("\n");
 
 //Cálculo de PIB per capita e Densidade Populacional
 
-pibpc1 = (float)PIB1 / populacao1;
-pibpc2 = (float)PIB2 / populacao2;
+pibpc1 = PIB1 / (float)populacao1;
+pibpc2 = PIB2 / (float)populacao2;
 densipop1 = (float)populacao1 / area1;
 densipop2 = (float)populacao2 / area2;
 
@@ -177,4 +177,5 @@ default:
 
 
 }
+
 
