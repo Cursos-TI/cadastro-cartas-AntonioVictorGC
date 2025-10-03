@@ -131,9 +131,9 @@ case 5:
     }
     break;
 case 6:
-    if (densipop1 > densipop2){
+    if (densipop1 < densipop2){
         printf("Carta 1 vence com %.2f habitantes por km2 contra %.2f habitantes por km2 da carta 2\n", densipop1, densipop2);
-    } else if (densipop2 > densipop1){
+    } else if (densipop2 < densipop1){
         printf("Carta 2 vence com %.2f habitantes por km2 contra %.2f habitantes por km2 da carta 1\n", densipop2, densipop1);
     } else {
         printf("Empate! Ambas as cartas possuem %.2f habitantes por km2\n", densipop1);
@@ -177,3 +177,4 @@ default:
 
 
 }
+
